@@ -1,5 +1,5 @@
 // Importamos el componente GifItem 
-import{ GifItem}from'./GifItem';
+import{ GifItem} from './GifItem';
 // Importamos el hook personalizado useFetchGifs
 import{ useFetchGifs}from'../hooks/useFetchGifs';
 
@@ -21,10 +21,7 @@ export const GifGrid=({category})=> {
         {/* // Mapeamos las imágenes a componentes GifItem, cada uno con una clave única y las propiedades de la imagen */}
         {
         images.map ((image)=> ( 
-        <GifItem 
-        key={image.id}
-        {...image}
-        />
+        <GifItem key={image.id} {...image}/>
     ))
     }
     </div>

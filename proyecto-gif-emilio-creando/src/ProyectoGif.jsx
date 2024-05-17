@@ -6,8 +6,7 @@ export const ProyectoGif = () => {
 const [categories, setCategories] = useState(["BACK TO THE FUTURE"]);
 // Definimos una función onAddCategory que toma un argumento newCategory
 const onAddCategory = (newCategory) => {
-// Si newCategory ya está en la lista de categorías, no hacemos nada y salimos de la
-función
+// Si newCategory ya está en la lista de categorías, no hacemos nada y salimos de la función
 if (categories.includes(newCategory)) return;
 // Si newCategory no está en la lista de categorías, la agregamos al principio de la
 lista

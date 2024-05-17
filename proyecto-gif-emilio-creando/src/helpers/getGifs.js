@@ -1,9 +1,7 @@
 // Definimos una función asíncrona getGifs que toma una categoría como argumento 
 export const getGifs= async(category) => {
     // Construimos la URL para la API de Giphy con la categoría y un límite de 10 imágenes
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=qLbHvT0BaqjtvqhtC6dwiObUukBdzimN&q=${ category 
-
-    }&limit=10`;
+    const url =`https://api.giphy.com/v1/gifs/search?api_key=qLbHvT0BaqjtvqhtC6dwiObUukBdzimN&q=${ category }&limit=10`;
     // Hacemos una petición a la API de Giphy
     const resp =await fetch ( url);
     // Extraemos los datos de la respuesta en formato JSON
