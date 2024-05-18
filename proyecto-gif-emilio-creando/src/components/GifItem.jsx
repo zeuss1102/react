@@ -9,5 +9,4 @@ export const GifItem=({title,url,id})=>{
         {/* // Mostramos el título de la imagen */}
         <p>{title}</p>
         </div>
-    )
-}
+    )}
